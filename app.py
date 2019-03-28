@@ -7,21 +7,22 @@ from flask import Flask
 app = Flask(__name__)
 
 
+
 def testLoop():
-    # time.sleep(10)
-	print(str(getpid()))
+    print(str(getpid()))
     start = time.time()
     tmp = 0.0
-    for i in range(1000):
+    for i in range(10000):
 	    for j in range(i):
 		    tmp = np.sqrt(tmp + j)
-	end = time.time()
+    end = time.time()
     return (end - start)
 	
 
 
 @app.route('/')
 def index():
+    # testLoop()
     p = Process(target=testLoop)
     p.start()
     p.join()
