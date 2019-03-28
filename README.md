@@ -1,3 +1,3 @@
 # Multiple parallel requests in Flask
 
-Run **./massive_calls.sh** to simulate multiple requests. 
+Start Flask with **python app.py** and run **./massive_calls.sh** to simulate multiple requests. 
