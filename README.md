@@ -1,3 +1,3 @@
-# Multi parallel requests in Flask
+# Multiple parallel requests in Flask
 
 Run **./massive_calls.sh** to simulate multiple requests. 
